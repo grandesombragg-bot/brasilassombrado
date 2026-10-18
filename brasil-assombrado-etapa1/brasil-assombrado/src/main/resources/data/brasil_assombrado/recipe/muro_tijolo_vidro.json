@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bricks"
+    },
+    {
+      "item": "brasil_assombrado:caco_de_vidro"
+    },
+    {
+      "item": "brasil_assombrado:caco_de_vidro"
+    }
+  ],
+  "result": {
+    "id": "brasil_assombrado:muro_tijolo_vidro",
+    "count": 1
+  }
+}

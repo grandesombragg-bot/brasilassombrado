@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "brasil_assombrado:item/oleo_de_lampiao"
+  }
+}
