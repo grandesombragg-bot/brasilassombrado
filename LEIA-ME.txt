@@ -1,0 +1,12 @@
+BRASIL ASSOMBRADO - Etapa 1 (base)
+
+Como gerar o .jar (sem instalar nada):
+1. Crie uma conta e um repositorio novo e vazio no github.com
+2. Clique em "uploading an existing file" e arraste TODO o conteudo desta pasta.
+   (Se a pasta oculta .github nao subir, clique em Add file > Create new file,
+   digite  .github/workflows/build.yml  no nome e cole o conteudo do arquivo build.yml)
+3. Abra a aba Actions, espere o build ficar verde (uns 3-5 minutos)
+4. Clique no build > Artifacts > brasil-assombrado-jar, baixe, extraia
+5. Coloque o .jar na pasta mods (precisa de Fabric Loader + Fabric API para 1.21.1)
+
+Se o build ficar vermelho, copie o erro e me mande.

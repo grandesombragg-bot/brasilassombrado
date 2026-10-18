@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "S",
+    "B",
+    "B"
+  ],
+  "key": {
+    "S": {
+      "item": "brasil_assombrado:sal_de_protecao"
+    },
+    "B": {
+      "item": "minecraft:stone_bricks"
+    }
+  },
+  "result": {
+    "id": "brasil_assombrado:totem_de_protecao",
+    "count": 1
+  }
+}
