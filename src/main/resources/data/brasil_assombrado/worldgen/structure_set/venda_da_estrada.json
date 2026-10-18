@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "brasil_assombrado:venda_da_estrada",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 22,
+    "separation": 7,
+    "salt": 1104
+  }
+}

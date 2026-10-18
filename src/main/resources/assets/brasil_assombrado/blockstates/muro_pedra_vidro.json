@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "com_cacos=true": {
+      "model": "brasil_assombrado:block/muro_pedra_vidro_cacos"
+    },
+    "com_cacos=false": {
+      "model": "brasil_assombrado:block/muro_pedra_vidro"
+    }
+  }
+}

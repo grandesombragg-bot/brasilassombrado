@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "brasil_assombrado:casa_do_interior",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 18,
+    "separation": 6,
+    "salt": 1101
+  }
+}

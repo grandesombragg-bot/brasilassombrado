@@ -1,0 +1,42 @@
+{
+  "textures": {
+    "side": "brasil_assombrado:block/muro_concreto_vidro_lado",
+    "topo": "brasil_assombrado:block/muro_topo",
+    "cacos": "brasil_assombrado:block/cacos",
+    "particle": "brasil_assombrado:block/muro_concreto_vidro_lado"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "faces": {
+        "down": {
+          "texture": "#side"
+        },
+        "north": {
+          "texture": "#side"
+        },
+        "south": {
+          "texture": "#side"
+        },
+        "west": {
+          "texture": "#side"
+        },
+        "east": {
+          "texture": "#side"
+        },
+        "up": {
+          "texture": "#topo"
+        }
+      }
+    }
+  ]
+}

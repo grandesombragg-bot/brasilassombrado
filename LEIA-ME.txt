@@ -10,3 +10,13 @@ Como gerar o .jar (sem instalar nada):
 5. Coloque o .jar na pasta mods (precisa de Fabric Loader + Fabric API para 1.21.1)
 
 Se o build ficar vermelho, copie o erro e me mande.
+
+
+ETAPA 2 - Estruturas
+Para achar as estruturas no jogo (modo criativo, com cheats ligados), digite:
+  /locate structure brasil_assombrado:casa_do_interior
+  /locate structure brasil_assombrado:sitio_esquecido
+  /locate structure brasil_assombrado:cemiterio_de_estrada
+  /locate structure brasil_assombrado:venda_da_estrada
+  /locate structure brasil_assombrado:ponte_do_gritador
+IMPORTANTE: crie um MUNDO NOVO para testar. Estruturas nao aparecem em areas ja exploradas.

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "brasil_assombrado:cemiterio_de_estrada",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 24,
+    "separation": 8,
+    "salt": 1103
+  }
+}

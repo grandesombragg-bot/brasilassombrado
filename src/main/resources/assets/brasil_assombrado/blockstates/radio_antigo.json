@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "brasil_assombrado:block/radio_antigo"
+    },
+    "facing=east": {
+      "model": "brasil_assombrado:block/radio_antigo",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "brasil_assombrado:block/radio_antigo",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "brasil_assombrado:block/radio_antigo",
+      "y": 270
+    }
+  }
+}
