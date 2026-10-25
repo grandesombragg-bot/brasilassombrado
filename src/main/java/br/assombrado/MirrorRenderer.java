@@ -48,30 +48,25 @@ public class MirrorRenderer implements BlockEntityRenderer<MirrorBlockEntity> {
         double side = -(pp.x - cx) * f.getOffsetZ() + (pp.z - cz) * f.getOffsetX();
         if (front < 0.4 || front > 8.0 || Math.abs(side) > 3.0) return;
 
-        // reflexo do jogador
+        // reflexo do jogador: sempre no mesmo lugar, dentro da janelinha, em tamanho reduzido
         boolean alongX = f.getAxis() == Direction.Axis.X;
-        double ex = pp.x - pos.getX();
-        double ey = pp.y - pos.getY();
-        double ez = pp.z - pos.getZ();
-        if (alongX) {
-            ex = 0.5 + f.getOffsetX() * 0.15;
-        } else {
-            ez = 0.5 + f.getOffsetZ() * 0.15;
-        }
+        double px = 0.5 + f.getOffsetX() * 0.15;
+        double pz = 0.5 + f.getOffsetZ() * 0.15;
         int l = WorldRenderer.getLightmapCoordinates(world, pos.offset(f));
         EntityRenderer<? super ClientPlayerEntity> renderer = mc.getEntityRenderDispatcher().getRenderer(player);
+        float s = 0.36f;
         matrices.push();
-        matrices.translate(ex, ey, ez);
-        matrices.scale(alongX ? -0.12f : 1.0f, 1.0f, alongX ? 1.0f : -0.12f);
+        matrices.translate(px, 0.18, pz);
+        matrices.scale(alongX ? -0.12f : s, s, alongX ? s : -0.12f);
         renderer.render(player, player.getYaw(tickDelta), tickDelta, matrices, vcp, l);
         matrices.pop();
 
         // vultos: aparecem e somem em ciclos curtos, sempre diferentes de espelho para espelho
         long t = world.getTime();
         long ciclo = t / 140;
-        if (t % 140 > 90 || front > 6.0) return;
+        if (t % 140 > 110 || front > 7.0) return;
         int h = new Random(pos.asLong() * 31L + ciclo).nextInt(12);
-        int tipo = h < 5 ? 0 : (h < 7 ? 1 : (h < 9 ? 2 : (h == 9 ? 3 : 0)));
+        int tipo = h < 3 ? 0 : (h < 6 ? 1 : (h < 9 ? 2 : 3));
         if (tipo == 0) return;
         BlockState olhos = ModBlocks.ESPELHO_OLHOS.getDefaultState().with(EyesBlock.TIPO, tipo);
         matrices.push();
