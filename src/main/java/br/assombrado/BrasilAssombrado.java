@@ -9,6 +9,7 @@ public class BrasilAssombrado implements ModInitializer {
     public void onInitialize() {
         ModItems.init();
         ModBlocks.init();
+        ModBlockEntities.init();
         ModItemGroup.init();
     }
 }

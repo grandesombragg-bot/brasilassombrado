@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "brasil_assombrado:muro_concreto"
+    },
+    {
+      "item": "brasil_assombrado:caco_de_vidro"
+    },
+    {
+      "item": "brasil_assombrado:caco_de_vidro"
+    }
+  ],
+  "result": {
+    "id": "brasil_assombrado:muro_concreto_vidro",
+    "count": 1
+  }
+}

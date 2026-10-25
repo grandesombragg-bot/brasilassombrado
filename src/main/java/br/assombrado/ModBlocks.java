@@ -27,7 +27,17 @@ public class ModBlocks {
     public static final Block TABUAS_DESGASTADAS = register("tabuas_desgastadas",
             new Block(AbstractBlock.Settings.create().strength(1.5f, 3.0f).sounds(BlockSoundGroup.WOOD)));
     public static final Block ESPELHO_RACHADO = register("espelho_rachado",
-            new Block(AbstractBlock.Settings.create().strength(0.5f).sounds(BlockSoundGroup.GLASS)));
+            new MirrorBlock(AbstractBlock.Settings.create().strength(0.5f).sounds(BlockSoundGroup.GLASS).nonOpaque()));
+    public static final Block ESPELHO_OLHOS = Registry.register(Registries.BLOCK,
+            Identifier.of(BrasilAssombrado.MOD_ID, "espelho_olhos"),
+            new EyesBlock(AbstractBlock.Settings.create().nonOpaque().noCollision().dropsNothing()));
+
+    public static final Block MURO_TIJOLO = register("muro_tijolo",
+            new Block(AbstractBlock.Settings.create().strength(2.0f, 6.0f).sounds(BlockSoundGroup.STONE)));
+    public static final Block MURO_PEDRA = register("muro_pedra",
+            new Block(AbstractBlock.Settings.create().strength(2.0f, 6.0f).sounds(BlockSoundGroup.STONE)));
+    public static final Block MURO_CONCRETO = register("muro_concreto",
+            new Block(AbstractBlock.Settings.create().strength(2.5f, 7.0f).sounds(BlockSoundGroup.STONE)));
 
     public static final Block LAMPIAO_VELHO = register("lampiao_velho",
             new ShapedBlock(AbstractBlock.Settings.create().strength(1.0f).sounds(BlockSoundGroup.LANTERN)

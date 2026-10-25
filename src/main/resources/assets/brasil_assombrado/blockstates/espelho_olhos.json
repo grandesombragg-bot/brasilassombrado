@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "tipo=1": {
+      "model": "brasil_assombrado:block/espelho_olhos_1"
+    },
+    "tipo=2": {
+      "model": "brasil_assombrado:block/espelho_olhos_2"
+    },
+    "tipo=3": {
+      "model": "brasil_assombrado:block/espelho_olhos_3"
+    }
+  }
+}

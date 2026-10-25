@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "brasil_assombrado:block/espelho_rachado"
+    },
+    "facing=east": {
+      "model": "brasil_assombrado:block/espelho_rachado",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "brasil_assombrado:block/espelho_rachado",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "brasil_assombrado:block/espelho_rachado",
+      "y": 270
     }
   }
 }

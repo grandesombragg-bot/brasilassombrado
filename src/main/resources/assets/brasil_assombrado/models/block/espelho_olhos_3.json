@@ -1,0 +1,32 @@
+{
+  "textures": {
+    "e": "brasil_assombrado:block/espelho_olhos_3",
+    "particle": "brasil_assombrado:block/espelho_olhos_3"
+  },
+  "elements": [
+    {
+      "from": [
+        3,
+        3,
+        10
+      ],
+      "to": [
+        13,
+        13,
+        10
+      ],
+      "shade": false,
+      "faces": {
+        "north": {
+          "texture": "#e",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        }
+      }
+    }
+  ]
+}
