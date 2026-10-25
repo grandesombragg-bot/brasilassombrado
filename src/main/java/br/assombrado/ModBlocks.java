@@ -34,9 +34,9 @@ public class ModBlocks {
                     .nonOpaque().luminance(state -> 13),
                     Block.createCuboidShape(5, 0, 5, 11, 10, 11)));
     public static final Block VELA_DE_PROMESSA = register("vela_de_promessa",
-            new ShapedBlock(AbstractBlock.Settings.create().breakInstantly().sounds(BlockSoundGroup.CANDLE)
-                    .nonOpaque().luminance(state -> 6),
-                    Block.createCuboidShape(6, 0, 6, 10, 5, 10)));
+            new VelaBlock(AbstractBlock.Settings.create().breakInstantly().sounds(BlockSoundGroup.CANDLE)
+                    .nonOpaque().luminance(state -> 7),
+                    Block.createCuboidShape(5.5, 0, 5.5, 10.5, 5, 10.5)));
     public static final Block TOTEM_DE_PROTECAO = register("totem_de_protecao",
             new ShapedBlock(AbstractBlock.Settings.create().strength(2.0f, 6.0f).sounds(BlockSoundGroup.WOOD)
                     .nonOpaque(),

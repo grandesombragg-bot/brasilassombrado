@@ -10,6 +10,6 @@ public class BrasilAssombradoClient implements ClientModInitializer {
         // blocos com partes transparentes (cacos de vidro, vidro do lampião)
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(),
                 ModBlocks.MURO_TIJOLO_VIDRO, ModBlocks.MURO_PEDRA_VIDRO, ModBlocks.MURO_CONCRETO_VIDRO,
-                ModBlocks.LAMPIAO_VELHO, ModBlocks.RADIO_ANTIGO);
+                ModBlocks.LAMPIAO_VELHO, ModBlocks.RADIO_ANTIGO, ModBlocks.VELA_DE_PROMESSA);
     }
 }

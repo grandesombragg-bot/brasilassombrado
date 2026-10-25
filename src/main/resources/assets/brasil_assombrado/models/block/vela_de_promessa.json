@@ -1,38 +1,277 @@
 {
   "textures": {
-    "all": "brasil_assombrado:block/vela_de_promessa",
+    "c": "brasil_assombrado:block/vela_de_promessa",
+    "f": "brasil_assombrado:block/vela_chama",
     "particle": "brasil_assombrado:block/vela_de_promessa"
   },
   "elements": [
     {
       "from": [
-        6,
+        5.5,
         0,
+        5.5
+      ],
+      "to": [
+        10.5,
+        4.5,
+        10.5
+      ],
+      "faces": {
+        "down": {
+          "texture": "#c",
+          "uv": [
+            8,
+            0,
+            16,
+            8
+          ]
+        },
+        "up": {
+          "texture": "#c",
+          "uv": [
+            8,
+            0,
+            16,
+            8
+          ]
+        },
+        "north": {
+          "texture": "#c",
+          "uv": [
+            8,
+            0,
+            16,
+            8
+          ]
+        },
+        "south": {
+          "texture": "#c",
+          "uv": [
+            8,
+            0,
+            16,
+            8
+          ]
+        },
+        "west": {
+          "texture": "#c",
+          "uv": [
+            8,
+            0,
+            16,
+            8
+          ]
+        },
+        "east": {
+          "texture": "#c",
+          "uv": [
+            8,
+            0,
+            16,
+            8
+          ]
+        }
+      }
+    },
+    {
+      "from": [
+        6,
+        0.3,
         6
       ],
       "to": [
         10,
-        5,
+        4.2,
         10
       ],
       "faces": {
         "down": {
-          "texture": "#all"
+          "texture": "#c",
+          "uv": [
+            0,
+            0,
+            8,
+            8
+          ]
         },
         "up": {
-          "texture": "#all"
+          "texture": "#c",
+          "uv": [
+            0,
+            0,
+            8,
+            8
+          ]
         },
         "north": {
-          "texture": "#all"
+          "texture": "#c",
+          "uv": [
+            0,
+            0,
+            8,
+            8
+          ]
         },
         "south": {
-          "texture": "#all"
+          "texture": "#c",
+          "uv": [
+            0,
+            0,
+            8,
+            8
+          ]
         },
         "west": {
-          "texture": "#all"
+          "texture": "#c",
+          "uv": [
+            0,
+            0,
+            8,
+            8
+          ]
         },
         "east": {
-          "texture": "#all"
+          "texture": "#c",
+          "uv": [
+            0,
+            0,
+            8,
+            8
+          ]
+        }
+      }
+    },
+    {
+      "from": [
+        7.85,
+        4.2,
+        7.85
+      ],
+      "to": [
+        8.15,
+        5.3,
+        8.15
+      ],
+      "faces": {
+        "down": {
+          "texture": "#c",
+          "uv": [
+            0,
+            8,
+            4,
+            12
+          ]
+        },
+        "up": {
+          "texture": "#c",
+          "uv": [
+            0,
+            8,
+            4,
+            12
+          ]
+        },
+        "north": {
+          "texture": "#c",
+          "uv": [
+            0,
+            8,
+            4,
+            12
+          ]
+        },
+        "south": {
+          "texture": "#c",
+          "uv": [
+            0,
+            8,
+            4,
+            12
+          ]
+        },
+        "west": {
+          "texture": "#c",
+          "uv": [
+            0,
+            8,
+            4,
+            12
+          ]
+        },
+        "east": {
+          "texture": "#c",
+          "uv": [
+            0,
+            8,
+            4,
+            12
+          ]
+        }
+      }
+    },
+    {
+      "from": [
+        7,
+        5.1,
+        8
+      ],
+      "to": [
+        9,
+        7.6,
+        8
+      ],
+      "shade": false,
+      "faces": {
+        "north": {
+          "texture": "#f",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#f",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "from": [
+        8,
+        5.1,
+        7
+      ],
+      "to": [
+        8,
+        7.6,
+        9
+      ],
+      "shade": false,
+      "faces": {
+        "east": {
+          "texture": "#f",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#f",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
         }
       }
     }
