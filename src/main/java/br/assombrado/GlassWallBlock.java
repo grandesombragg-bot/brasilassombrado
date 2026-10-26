@@ -16,8 +16,8 @@ import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 
 /**
- * Muro com cacos de vidro. Só a fileira de cima mostra os cacos (com_cacos = true).
- * Machuca quem encosta, como um cacto; criaturas muito pequenas evitam o muro.
+ * Muro com cacos de vidro. Só a fileira de cima mostra os cacos (com_cacos = true) e só ela machuca:
+ * dano de cacto mais um empurrão para trás. Criaturas muito pequenas evitam o muro.
  */
 public class GlassWallBlock extends Block {
     public static final BooleanProperty COM_CACOS = BooleanProperty.of("com_cacos");
@@ -56,8 +56,13 @@ public class GlassWallBlock extends Block {
     @Override
     protected void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
         if (world.isClient) return;
-        if (!(entity instanceof LivingEntity)) return;
+        if (!state.get(COM_CACOS)) return;
+        if (!(entity instanceof LivingEntity vivo)) return;
         if (entity.getWidth() < 0.5f) return;
-        entity.damage(world.getDamageSources().cactus(), 1.0f);
+        if (vivo.damage(world.getDamageSources().cactus(), 2.0f)) {
+            double dx = pos.getX() + 0.5 - entity.getX();
+            double dz = pos.getZ() + 0.5 - entity.getZ();
+            vivo.takeKnockback(0.7, dx, dz);
+        }
     }
 }

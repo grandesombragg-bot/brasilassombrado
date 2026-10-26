@@ -33,11 +33,11 @@ public class ModBlocks {
             new EyesBlock(AbstractBlock.Settings.create().nonOpaque().noCollision().dropsNothing()));
 
     public static final Block MURO_TIJOLO = register("muro_tijolo",
-            new Block(AbstractBlock.Settings.create().strength(2.0f, 6.0f).sounds(BlockSoundGroup.STONE)));
+            new MuroLisoBlock(AbstractBlock.Settings.create().strength(2.0f, 6.0f).sounds(BlockSoundGroup.STONE)));
     public static final Block MURO_PEDRA = register("muro_pedra",
-            new Block(AbstractBlock.Settings.create().strength(2.0f, 6.0f).sounds(BlockSoundGroup.STONE)));
+            new MuroLisoBlock(AbstractBlock.Settings.create().strength(2.0f, 6.0f).sounds(BlockSoundGroup.STONE)));
     public static final Block MURO_CONCRETO = register("muro_concreto",
-            new Block(AbstractBlock.Settings.create().strength(2.5f, 7.0f).sounds(BlockSoundGroup.STONE)));
+            new MuroLisoBlock(AbstractBlock.Settings.create().strength(2.5f, 7.0f).sounds(BlockSoundGroup.STONE)));
 
     public static final Block LAMPIAO_VELHO = register("lampiao_velho",
             new ShapedBlock(AbstractBlock.Settings.create().strength(1.0f).sounds(BlockSoundGroup.LANTERN)

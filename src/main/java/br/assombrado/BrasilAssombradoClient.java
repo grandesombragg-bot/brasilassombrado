@@ -15,5 +15,6 @@ public class BrasilAssombradoClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ESPELHO_RACHADO, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ESPELHO_OLHOS, RenderLayer.getCutout());
         BlockEntityRendererFactories.register(ModBlockEntities.ESPELHO, MirrorRenderer::new);
+        MirrorEffect.init();
     }
 }
