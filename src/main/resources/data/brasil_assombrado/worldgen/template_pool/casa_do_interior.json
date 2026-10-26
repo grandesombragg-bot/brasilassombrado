@@ -9,15 +9,6 @@
         "processors": "minecraft:empty",
         "projection": "rigid"
       }
-    },
-    {
-      "weight": 1,
-      "element": {
-        "element_type": "minecraft:single_pool_element",
-        "location": "brasil_assombrado:casa_do_interior_2",
-        "processors": "minecraft:empty",
-        "projection": "rigid"
-      }
     }
   ]
 }
