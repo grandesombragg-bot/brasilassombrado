@@ -16,5 +16,21 @@
   "block.brasil_assombrado.muro_tijolo": "Muro de Tijolos",
   "block.brasil_assombrado.muro_pedra": "Muro de Pedra",
   "block.brasil_assombrado.muro_concreto": "Muro de Concreto",
-  "block.brasil_assombrado.espelho_olhos": "Vulto"
+  "block.brasil_assombrado.espelho_olhos": "Vulto",
+  "entity.brasil_assombrado.corpo_seco": "Corpo Seco",
+  "entity.brasil_assombrado.enraizado": "Enraizado",
+  "item.brasil_assombrado.corpo_seco_spawn_egg": "Ovo gerador de Corpo Seco",
+  "item.brasil_assombrado.enraizado_spawn_egg": "Ovo gerador de Enraizado",
+  "item.brasil_assombrado.cabelo_do_corpo_seco": "Cabelo do Corpo Seco",
+  "effect.brasil_assombrado.maldicao_seca": "Maldição Seca",
+  "block.brasil_assombrado.gatilho_corpo_seco": "Gatilho do Corpo Seco",
+  "subtitles.brasil_assombrado.corpo_seco.ambiente": "Corpo Seco range",
+  "subtitles.brasil_assombrado.corpo_seco.ferido": "Corpo Seco é ferido",
+  "subtitles.brasil_assombrado.corpo_seco.grito": "Corpo Seco grita",
+  "subtitles.brasil_assombrado.corpo_seco.morte": "Corpo Seco desmorona",
+  "subtitles.brasil_assombrado.corpo_seco.passo": "Passos secos",
+  "subtitles.brasil_assombrado.corpo_seco.quebrar": "Corpo Seco arrebenta a parede",
+  "subtitles.brasil_assombrado.corpo_seco.invocar": "Sussurros secos",
+  "subtitles.brasil_assombrado.enraizado.ambiente": "Enraizado arranha",
+  "subtitles.brasil_assombrado.enraizado.morte": "Enraizado se desfaz"
 }

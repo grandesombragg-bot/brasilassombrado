@@ -32,6 +32,10 @@ public class ModBlocks {
             Identifier.of(BrasilAssombrado.MOD_ID, "espelho_olhos"),
             new EyesBlock(AbstractBlock.Settings.create().nonOpaque().noCollision().dropsNothing()));
 
+    public static final Block GATILHO_CORPO_SECO = Registry.register(Registries.BLOCK,
+            Identifier.of(BrasilAssombrado.MOD_ID, "gatilho_corpo_seco"),
+            new GatilhoBlock(AbstractBlock.Settings.create().noCollision().nonOpaque().dropsNothing().strength(-1.0f, 3600000.0f)));
+
     public static final Block MURO_TIJOLO = register("muro_tijolo",
             new MuroLisoBlock(AbstractBlock.Settings.create().strength(2.0f, 6.0f).sounds(BlockSoundGroup.STONE)));
     public static final Block MURO_PEDRA = register("muro_pedra",
@@ -40,8 +44,8 @@ public class ModBlocks {
             new MuroLisoBlock(AbstractBlock.Settings.create().strength(2.5f, 7.0f).sounds(BlockSoundGroup.STONE)));
 
     public static final Block LAMPIAO_VELHO = register("lampiao_velho",
-            new ShapedBlock(AbstractBlock.Settings.create().strength(1.0f).sounds(BlockSoundGroup.LANTERN)
-                    .nonOpaque().luminance(state -> 13),
+            new LampiaoBlock(AbstractBlock.Settings.create().strength(1.0f).sounds(BlockSoundGroup.LANTERN)
+                    .nonOpaque().luminance(state -> state.get(LampiaoBlock.ACESO) ? 13 : 0),
                     Block.createCuboidShape(5, 0, 5, 11, 10, 11)));
     public static final Block VELA_DE_PROMESSA = register("vela_de_promessa",
             new VelaBlock(AbstractBlock.Settings.create().breakInstantly().sounds(BlockSoundGroup.CANDLE)

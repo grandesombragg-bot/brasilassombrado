@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "aceso=true": {
       "model": "brasil_assombrado:block/lampiao_velho"
+    },
+    "aceso=false": {
+      "model": "brasil_assombrado:block/lampiao_velho_apagado"
     }
   }
 }

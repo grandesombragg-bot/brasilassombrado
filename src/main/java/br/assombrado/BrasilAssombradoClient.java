@@ -2,7 +2,10 @@ package br.assombrado;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.util.Identifier;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 
 public class BrasilAssombradoClient implements ClientModInitializer {
@@ -16,5 +19,10 @@ public class BrasilAssombradoClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ESPELHO_OLHOS, RenderLayer.getCutout());
         BlockEntityRendererFactories.register(ModBlockEntities.ESPELHO, MirrorRenderer::new);
         MirrorEffect.init();
+        EntityModelLayerRegistry.registerModelLayer(SecoModel.LAYER, SecoModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.CORPO_SECO, ctx -> new SecoRenderer<CorpoSecoEntity>(ctx,
+                Identifier.of(BrasilAssombrado.MOD_ID, "textures/entity/corpo_seco.png"), 1.0f));
+        EntityRendererRegistry.register(ModEntities.ENRAIZADO, ctx -> new SecoRenderer<EnraizadoEntity>(ctx,
+                Identifier.of(BrasilAssombrado.MOD_ID, "textures/entity/enraizado.png"), 0.55f));
     }
 }

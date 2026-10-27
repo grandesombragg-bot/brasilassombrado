@@ -1,0 +1,59 @@
+{
+  "corpo_seco.ambiente": {
+    "sounds": [
+      "brasil_assombrado:corpo_seco/ambiente1",
+      "brasil_assombrado:corpo_seco/ambiente2",
+      "brasil_assombrado:corpo_seco/ambiente3"
+    ],
+    "subtitle": "subtitles.brasil_assombrado.corpo_seco.ambiente"
+  },
+  "corpo_seco.ferido": {
+    "sounds": [
+      "brasil_assombrado:corpo_seco/ferido1",
+      "brasil_assombrado:corpo_seco/ferido2"
+    ],
+    "subtitle": "subtitles.brasil_assombrado.corpo_seco.ferido"
+  },
+  "corpo_seco.grito": {
+    "sounds": [
+      "brasil_assombrado:corpo_seco/grito"
+    ],
+    "subtitle": "subtitles.brasil_assombrado.corpo_seco.grito"
+  },
+  "corpo_seco.morte": {
+    "sounds": [
+      "brasil_assombrado:corpo_seco/morte"
+    ],
+    "subtitle": "subtitles.brasil_assombrado.corpo_seco.morte"
+  },
+  "corpo_seco.passo": {
+    "sounds": [
+      "brasil_assombrado:corpo_seco/passo"
+    ],
+    "subtitle": "subtitles.brasil_assombrado.corpo_seco.passo"
+  },
+  "corpo_seco.quebrar": {
+    "sounds": [
+      "brasil_assombrado:corpo_seco/quebrar"
+    ],
+    "subtitle": "subtitles.brasil_assombrado.corpo_seco.quebrar"
+  },
+  "corpo_seco.invocar": {
+    "sounds": [
+      "brasil_assombrado:corpo_seco/invocar"
+    ],
+    "subtitle": "subtitles.brasil_assombrado.corpo_seco.invocar"
+  },
+  "enraizado.ambiente": {
+    "sounds": [
+      "brasil_assombrado:enraizado/ambiente"
+    ],
+    "subtitle": "subtitles.brasil_assombrado.enraizado.ambiente"
+  },
+  "enraizado.morte": {
+    "sounds": [
+      "brasil_assombrado:enraizado/morte"
+    ],
+    "subtitle": "subtitles.brasil_assombrado.enraizado.morte"
+  }
+}
