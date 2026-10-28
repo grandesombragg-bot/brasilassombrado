@@ -40,6 +40,6 @@ public class LampiaoBlock extends ShapedBlock {
             }
             return ItemActionResult.success(world.isClient);
         }
-        return ItemActionResult.PASS_TO_DEFAULT_BLOCK_ACTION;
+        return ItemActionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
     }
 }
