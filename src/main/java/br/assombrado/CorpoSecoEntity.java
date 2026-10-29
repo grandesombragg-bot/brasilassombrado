@@ -29,6 +29,7 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.particle.BlockStateParticleEffect;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -60,11 +61,12 @@ public class CorpoSecoEntity extends HostileEntity {
 
     private final ServerBossBar bossBar = new ServerBossBar(Text.translatable("entity.brasil_assombrado.corpo_seco"),
             BossBar.Color.PURPLE, BossBar.Style.NOTCHED_10);
-    private int investidaCooldown = 100;
+    private boolean emergiu = false;
+    private int investidaCooldown = 60;
     private int invasaoTicks = 0;
-    private int invocarCooldown = 220;
+    private int invocarCooldown = 100;
     private int totalInvocados = 0;
-    private int raizesCooldown = 320;
+    private int raizesCooldown = 160;
     private final List<UUID> capangas = new ArrayList<>();
 
     public CorpoSecoEntity(EntityType<? extends HostileEntity> tipo, World mundo) {
@@ -131,6 +133,18 @@ public class CorpoSecoEntity extends HostileEntity {
     }
 
     @Override
+    public void writeCustomDataToNbt(NbtCompound nbt) {
+        super.writeCustomDataToNbt(nbt);
+        nbt.putBoolean("Emergiu", emergiu);
+    }
+
+    @Override
+    public void readCustomDataFromNbt(NbtCompound nbt) {
+        super.readCustomDataFromNbt(nbt);
+        emergiu = nbt.getBoolean("Emergiu");
+    }
+
+    @Override
     public boolean canImmediatelyDespawn(double distancia) {
         return false;
     }
@@ -156,6 +170,10 @@ public class CorpoSecoEntity extends HostileEntity {
         ServerWorld sw = (ServerWorld) mundo;
         bossBar.setPercent(getHealth() / getMaxHealth());
 
+        if (!emergiu) {
+            emergiu = true;
+            if (getEmerge() == 0) iniciarEmersao();
+        }
         int e = getEmerge();
         if (e > 0) {
             this.dataTracker.set(EMERGE, e - 1);
@@ -172,7 +190,7 @@ public class CorpoSecoEntity extends HostileEntity {
         if (isDead()) return;
 
         this.dataTracker.set(ESCALANDO, this.horizontalCollision && podeEscalar());
-        if (age % 10 == 0) apagarLampioes(10);
+        if (age % 10 == 0) apagarLampioes(14);
         if (age % 4 == 0) contagiarMobs(sw);
         if (invasaoTicks > 0) invasaoTicks--;
 

@@ -12,6 +12,11 @@ public class ModBlockEntities {
             Identifier.of(BrasilAssombrado.MOD_ID, "espelho"),
             FabricBlockEntityTypeBuilder.create(MirrorBlockEntity::new, ModBlocks.ESPELHO_RACHADO).build());
 
+    public static final BlockEntityType<GatilhoBlockEntity> GATILHO = Registry.register(
+            Registries.BLOCK_ENTITY_TYPE,
+            Identifier.of(BrasilAssombrado.MOD_ID, "gatilho"),
+            FabricBlockEntityTypeBuilder.create(GatilhoBlockEntity::new, ModBlocks.GATILHO_CORPO_SECO).build());
+
     public static void init() {
     }
 }

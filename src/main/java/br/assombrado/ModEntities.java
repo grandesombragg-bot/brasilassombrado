@@ -15,12 +15,12 @@ public class ModEntities {
     public static final EntityType<CorpoSecoEntity> CORPO_SECO = Registry.register(Registries.ENTITY_TYPE,
             Identifier.of(BrasilAssombrado.MOD_ID, "corpo_seco"),
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, CorpoSecoEntity::new)
-                    .dimensions(EntityDimensions.fixed(0.9f, 2.6f)).trackRangeBlocks(80).fireImmune().build());
+                    .dimensions(EntityDimensions.fixed(0.9f, 3.0f)).trackRangeBlocks(80).fireImmune().build());
 
     public static final EntityType<EnraizadoEntity> ENRAIZADO = Registry.register(Registries.ENTITY_TYPE,
             Identifier.of(BrasilAssombrado.MOD_ID, "enraizado"),
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, EnraizadoEntity::new)
-                    .dimensions(EntityDimensions.fixed(0.5f, 1.4f)).trackRangeBlocks(48).build());
+                    .dimensions(EntityDimensions.fixed(0.8f, 1.0f)).trackRangeBlocks(48).build());
 
     public static void init() {
         FabricDefaultAttributeRegistry.register(CORPO_SECO, CorpoSecoEntity.createAttributes());

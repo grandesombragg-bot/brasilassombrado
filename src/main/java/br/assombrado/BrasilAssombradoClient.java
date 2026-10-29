@@ -19,10 +19,9 @@ public class BrasilAssombradoClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ESPELHO_OLHOS, RenderLayer.getCutout());
         BlockEntityRendererFactories.register(ModBlockEntities.ESPELHO, MirrorRenderer::new);
         MirrorEffect.init();
-        EntityModelLayerRegistry.registerModelLayer(SecoModel.LAYER, SecoModel::getTexturedModelData);
-        EntityRendererRegistry.register(ModEntities.CORPO_SECO, ctx -> new SecoRenderer<CorpoSecoEntity>(ctx,
-                Identifier.of(BrasilAssombrado.MOD_ID, "textures/entity/corpo_seco.png"), 1.0f));
-        EntityRendererRegistry.register(ModEntities.ENRAIZADO, ctx -> new SecoRenderer<EnraizadoEntity>(ctx,
-                Identifier.of(BrasilAssombrado.MOD_ID, "textures/entity/enraizado.png"), 0.55f));
+        EntityModelLayerRegistry.registerModelLayer(CorpoSecoModel.LAYER, CorpoSecoModel::getTexturedModelData);
+        EntityModelLayerRegistry.registerModelLayer(EnraizadoModel.LAYER, EnraizadoModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.CORPO_SECO, CorpoSecoRenderer::new);
+        EntityRendererRegistry.register(ModEntities.ENRAIZADO, EnraizadoRenderer::new);
     }
 }
